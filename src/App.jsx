@@ -1,15 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import Navbar from './Navbar.jsx'
 
 function App() {
 
   return (
     <>
-      <div>
-        <a href='/' className='Logo'>
-          <img src='/Small_logo.jpg'/>
-        </a>
-      </div>
+    <Navbar/>
     </>
   )
 }
