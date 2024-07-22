@@ -21,6 +21,10 @@ h1 {
   line-height: 1.1;
 }
 
+a {
+  color: #236b2d;
+}
+
 
 /* @media (prefers-color-scheme: light) {
   :root {
