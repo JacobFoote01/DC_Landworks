@@ -1,22 +1,19 @@
-/* src/Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     padding: 10px 20px;
     color: white;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    z-index: 1000;
+    background-color: #373d3c;
 }
 
 .logo img {
-    height: 50px;
-}
-
-.nav-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
+    height: 100px;
 }
 
 .nav-links {
@@ -32,28 +29,37 @@
     font-size: 24px;
 }
 
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
 
+.horizontal-bar {
+    width: 100vw;
+    height: 15px;
+    background-color: #ff0404; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+}
+
+.main-content {
+    margin-top: 150px; 
+}
+
+@media (max-width: 768px) {
     .nav-links {
-        display: none;
-        /* flex-direction: column; */
+        display: flex;
+        flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0;
-        background-color: #333;
         padding: 10px 0;
-    }
-
-    .nav-links.open {
-        display: flex;
     }
 
     .nav-links li {
         text-align: center;
         margin: 10px 0;
+    }
+
+    .horizontal-bar {
+        display: none; /* Hide the bar on mobile if not needed */
     }
 }

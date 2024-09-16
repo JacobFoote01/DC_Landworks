@@ -1,30 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaBars, FaTimes, FaPhoneAlt, FaFacebook } from "react-icons/fa"
-import './Navbar.css'
+import { FaPhoneAlt, FaFacebook } from "react-icons/fa";
+import './Navbar.css';
 
 const Navbar = () => {
-  const[isOpen, setisOpen] = useState(false)
-
-  const toggleNav = () => {
-    setisOpen(!isOpen)
-  }
-
     return (
-        <nav>
-            <div href='/' className='Logo'>
-          <img src='/Small_logo.jpg'/>
-      </div>
-      <div className="link" onClick={toggleNav}> 
-        {isOpen ? <FaTimes /> : <FaBars />}
-      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <a href='tel:+18019133046'><FaPhoneAlt /></a>
-        <a href='mailto:dclandworksut@gmail.com'><MdEmail /></a>
-        <a href='https://www.facebook.com/people/DC-Landworks/61557464499433/'><FaFacebook /></a>
-        </ul>
-        </div>
+        <nav className="navbar">
+            <div className="logo">
+                <a href='/'>
+                    <img src='/Small_logo.jpg' alt="Logo"/>
+                </a>
+            </div>
+            <ul className="nav-links">
+                <li>
+                    <a href='tel:+18019133046'><FaPhoneAlt /></a>
+                </li>
+                <li>
+                    <a href='mailto:dclandworksut@gmail.com'><MdEmail /></a>
+                </li>
+                <li>
+                    <a href='https://www.facebook.com/people/DC-Landworks/61557464499433/'><FaFacebook /></a>
+                </li>
+            </ul>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
+
