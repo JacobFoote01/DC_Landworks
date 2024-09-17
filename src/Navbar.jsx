@@ -22,6 +22,7 @@ const Navbar = () => {
                     <a href='https://www.facebook.com/people/DC-Landworks/61557464499433/'><FaFacebook /></a>
                 </li>
             </ul>
+            <div className="bar"/>
         </nav>
     );
 };
