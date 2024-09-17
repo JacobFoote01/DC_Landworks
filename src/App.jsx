@@ -1,8 +1,5 @@
 import './App.css'
 import Navbar from './Navbar.jsx'
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
 
 function App() {
 

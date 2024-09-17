@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 15px;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
-    width: 95vw;
+    width: 100vw;
     z-index: 1000;
     background-color: #373d3c;
 }
@@ -21,22 +21,27 @@
     display: flex;
     gap: 20px;
     margin: 0;
+    margin-right: 100px;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: white;
     font-size: 24px;
 }
 
+.nav-links li a :hover {
+    color: #6afd65;
+}
 
-.horizontal-bar {
-    width: 100vw;
-    height: 15px;
-    background-color: #ff0404; 
-    position: absolute;
-    bottom: 0; 
+.bar {
+    width: 100vw; 
+    height: 150px;
+    color: #ff0404;
+    position: fixed; 
+    top: 100px; 
     left: 0;
+    z-index: 999; 
+    /* border: #6afd65; */
 }
 
 .main-content {
@@ -46,12 +51,11 @@
 @media (max-width: 768px) {
     .nav-links {
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        width: 100vw;
         position: absolute;
         top: 100px;
         left: 0;
-        padding: 10px 0;
+        padding: 10px 50px;
     }
 
     .nav-links li {
@@ -59,7 +63,8 @@
         margin: 10px 0;
     }
 
-    .horizontal-bar {
-        display: none; /* Hide the bar on mobile if not needed */
+    .logo img {
+        height: 75px;
     }
 }
+
