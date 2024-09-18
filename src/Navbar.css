@@ -10,7 +10,7 @@
     width: 100vw;
     z-index: 1000;
     background-color: #373d3c;
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid #236b2d;
 }
 
 .logo img {
@@ -32,17 +32,6 @@
 
 .nav-links li a :hover {
     color: #6afd65;
-}
-
-.bar {
-    /* width: 100vw; 
-    height: 2px;
-    background-color: #ff0404;
-    position: fixed; 
-    top: 100px; 
-    left: 0;
-    z-index: 9999;  */
-    /* border: #6afd65; */
 }
 
 .main-content {
