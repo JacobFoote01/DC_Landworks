@@ -13,10 +13,10 @@ const Navbar = () => {
             </div>
             <ul className="nav-links">
                 <li>
-                    <a href='tel:+18019133046'><FaPhoneAlt /></a>
+                    <a href='tel:+18019133046'><FaPhoneAlt /> 801-913-3046</a>
                 </li>
                 <li>
-                    <a href='mailto:dclandworksut@gmail.com'><MdEmail /></a>
+                    <a href='mailto:dclandworksut@gmail.com'><MdEmail /> dclandworksut@gmail.com</a>
                 </li>
                 <li>
                     <a href='https://www.facebook.com/people/DC-Landworks/61557464499433/'><FaFacebook /></a>
