@@ -8,7 +8,7 @@
     left: 0;
     width: 100vw;
     z-index: 1000;
-    background-color: #d5dddf;
+    background-color: #ffffff;
     border-bottom: 5px solid #6b8e4e;
 }
 
@@ -30,9 +30,19 @@
 }
 
 .nav-links li a :hover {
-    color: #6b8e4e;
+    color: #1b2727;
 }
 
+.links a {
+    text-decoration: none;
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.links a :hover {
+    color: #1b2727;
+}
 
 @media (max-width: 768px) {
     .nav-links {
