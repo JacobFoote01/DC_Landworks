@@ -1,38 +1,26 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: #1b2727;
-  background-image: url("/background\ photo.jpg");
-  background-repeat: no-repeat; 
-  background-position: center;
-  background-size: cover;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("/background%20photo.jpg");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #1b2727;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  background-color: #ffffff;
 }
 
-a {
-  color: #6b8e4e;
-}
-
-button {
-  background-color: #6b8e4e;
-  border-radius: 10px;
-  color: #1b2727;
-  padding: 10px;
-  font-size: 20px;
+.footer {
+background-color: #ffffff;
+size: 100px;
 }
 
 @media (prefers-color-scheme: light) {

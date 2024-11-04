@@ -24,21 +24,24 @@
 .links a {
     text-decoration: none;
     font-size: 26px;
-    padding: 10px;
+    padding: 10px 20px;
     color: #000;
+    font-weight: bold;
 }
 
 .links a:hover {
-    color: #1b2727;
+    color: #1f7713;
 }
 
 .quote {
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #6b8e4e;
-    color: #ffffff;
     border: none;
     cursor: pointer;
+    border-radius: 10px;
+    color: #1b2727;
+    margin-right: 45px;
 }
 
 /* Responsive Styles */

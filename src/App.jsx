@@ -1,18 +1,25 @@
-import './App.css'
-import Navbar from './Navbar.jsx'
+import React from "react";
+import Navbar from "./Navbar";
+import Home from "./Home"; 
+import About from "./About";
+import Services from "./Services"
+import Contact from "./Contact"
+import Footer from "./Footer";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
+    return (
+        <div>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Services" element={<Services />} />
+                <Route path="/Contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+        </div>
+    );
+};
 
-  return (
-    <div >
-    <Navbar/>
-    <main>
-      <h1>Home Page</h1>
-      {/* <h2>Landscape Construction and Tree Work in Salt Lake and Utah Valley</h2>
-      <h2>Licensed and Insured</h2> */}
-    </main>
-    </div>
-  )
-}
-
-export default App
+export default App;
