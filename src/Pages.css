@@ -24,11 +24,18 @@
     font-size: 20px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .Services {
+    background-color: #ffffff;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+.Contact {
     background-color: #ffffff;
     width: 90vw;
     display: flex;
