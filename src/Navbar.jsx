@@ -1,9 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import './Navbar.css';
 
 const Navbar = () => {
+    const navigate = useNavigate()
+
+    const handleClick = () => {
+        navigate('/Contact')    
+    }
     return (
+
         <nav className="navbar">
             <div className="logo">
                 <Link to='/'>
@@ -15,7 +21,7 @@ const Navbar = () => {
                     <Link to="/Services">Services</Link>
                     <Link to="/Contact">Contact</Link>
             </div>
-            <button className="quote">Get a Quote</button>
+            <button className="quote" onClick={handleClick}>Get a Quote</button>
         </nav>
     );
 };

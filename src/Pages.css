@@ -1,0 +1,38 @@
+.Home {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: fit-content;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+.About {
+    background-color: #ffffff;
+    width: 90vw;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+.aboutTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContent {
+    font-size: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.Services {
+    background-color: #ffffff;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5%;
+}
