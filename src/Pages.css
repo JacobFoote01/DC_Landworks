@@ -5,14 +5,25 @@
     width: 90vw;
     height: fit-content;
     border-radius: 5px;
-    margin: 5%;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
 }
 
 .About {
     background-color: #ffffff;
     width: 90vw;
+    max-width: 600px;
+    padding: 20px;
     border-radius: 5px;
-    margin: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .aboutTitle {
@@ -32,7 +43,6 @@
     display: flex;
     justify-content: center;
     border-radius: 5px;
-    margin: 5%;
 }
 
 .pageContainer {
@@ -113,18 +123,21 @@ textarea {
     margin: 5px 0;
 }
 
-@media () {
+@media (max-width: 768px) {
     .Contact {
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
 
     .contactForm {
-        width: 60%;
+        width: 100%;
     }
 
     .contactInfo {
-        width: 35%;
-        text-align: left;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
     }
 }

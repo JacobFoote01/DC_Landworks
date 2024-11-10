@@ -6,17 +6,20 @@ import Services from "./Services"
 import Contact from "./Contact"
 import Footer from "./Footer";
 import { Route, Routes } from "react-router-dom";
+import './index.css'
 
 const App = () => {
     return (
         <div>
             <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Services" element={<Services />} />
-                <Route path="/Contact" element={<Contact />} />
-            </Routes>
+            <div className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Services" element={<Services />} />
+                    <Route path="/Contact" element={<Contact />} />
+                </Routes>
+            </div>
             <Footer />
         </div>
     );

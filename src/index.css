@@ -1,15 +1,31 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-image: url("/background%20photo.jpg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: #1b2727;
+  padding-top: 120px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  overflow-y: auto;
+  width: 100%;
+  flex: 1;
 }
 
 h1 {
@@ -51,6 +67,7 @@ button {
     color: #1b2727;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #6b8e4e;
   }
