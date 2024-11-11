@@ -37,21 +37,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* .Services {
+.servicesPageTitle {
     background-color: #ffffff;
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-} */
+}
 
-/* Container styling */
 .services-container {
     padding: 20px;
     text-align: center;
 }
 
-/* Grid layout */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -59,7 +53,6 @@
     padding: 20px;
 }
 
-/* Individual service item styling */
 .service-item {
     background-color: #ffffff;
     border-radius: 10px;
@@ -83,6 +76,7 @@
     font-size: 1.5em;
     color: #1b2727;
     margin: 10px 0;
+    background-color: #ffffff;
 }
 
 .service-description {
