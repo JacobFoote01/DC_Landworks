@@ -2,16 +2,15 @@ import React from "react";
 import './Pages.css';
 
 const services = [
-    { id: 1, title: "Landscaping", imgSrc: "/Landscape.jpg", description: "High-quality lawn care services to keep your grass green and healthy." },
-    { id: 2, title: "Tree Trimming", imgSrc: "/Trimming.jpg", description: "Professional tree trimming for safety and beauty." },
-    { id: 3, title: "Garden Design", imgSrc: "/Sprinklers.jpg", description: "Create a beautiful garden tailored to your space." },
-    { id: 4, title: "Irrigation Systems", imgSrc: "/Irrigation.jpg", description: "Efficient irrigation systems to keep your plants hydrated." }
+    { id: 1, title: "Tree Trimming", imgSrc: "/Trimming.jpg", description: "Keep your trees healthy and beautiful with our professional tree trimming services. We specialize in shaping, pruning, and maintaining trees to ensure safety and enhance your landscape." },
+    { id: 2, title: "Landscaping", imgSrc: "/Sprinklers.jpg", description: "Transform your outdoors with our expert landscaping services. From design and planting to hardscaping, we create beautiful, functional spaces tailored to your needs." },
+    { id: 3, title: "Irrigation Systems", imgSrc: "/Irrigation.jpg", description: "Optimize your landscape with our efficient irrigation services. We design and install custom systems to ensure your plants thrive while conserving water and reducing maintenance." }
 ];
 
 const Services = () => {
     return (
         <div className="services-container">
-            <h1>Our Services</h1>
+            <h1 className="servicesPageTitle">Our Services</h1>
             <div className="services-grid">
                 {services.map((service) => (
                     <div key={service.id} className="service-item">
