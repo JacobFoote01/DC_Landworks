@@ -69,7 +69,7 @@ button:hover {
     padding: 10px;
 }
 
-@media (max-width: 902px) {
+@media (max-width: 1286px) {
     .navbar {
         flex-direction: column;
         align-items: center;

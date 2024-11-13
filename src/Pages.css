@@ -14,6 +14,7 @@
     max-height: 100vh;
     width: 75%;
     padding: 20px;
+    margin: auto;
 }
 
 .About {
@@ -44,7 +45,6 @@
     text-align: center;
     background-color: #ffffff;
     border-radius: 7px;
-    margin: auto;
 }
 
 .services-grid {
@@ -87,7 +87,7 @@
 }
 
 
-.pageContainer {
+.contactContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,8 +99,9 @@
 .Contact {
     background-color: #ffffff;
     width: 100vw;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 900px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -113,7 +114,6 @@
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
-    margin-right: 20px;
 }
 
 .contactForm div {
@@ -144,30 +144,30 @@ textarea {
     font-size: 16px;
     padding: 10px 20px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #6b8e4e;
+    color: #1b2727;
     border-radius: 4px;
     cursor: pointer;
     align-self: flex-start;
 }
 
 #submitButton:hover {
-    background-color: #45a049;
+    background-color: #1f7713;
 }
 
 .contactInfo {
     font-size: 18px;
     color: #555;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .contactInfo div {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 @media (max-width: 768px) {
     .Contact {
-        /* flex-direction: row; */
         justify-content: space-between;
         align-items: center;
         padding: 20px;
@@ -178,7 +178,7 @@ textarea {
     }
 
     .contactInfo {
-        width: 100%;
+        width: 90%;
         text-align: center;
         margin-top: 20px;
     }
