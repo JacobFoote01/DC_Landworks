@@ -36,14 +36,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.servicesPageTitle {
+/* .servicesPageTitle {
     background-color: #ffffff;
-}
+} */
 
 .services-container {
     padding: 20px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #ebebeb;
     border-radius: 7px;
 }
 
