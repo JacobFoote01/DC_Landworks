@@ -24,7 +24,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="pageContainer">
+        <div className="contactContainer">
             <div className="Contact">
                 <h1>Contact Page</h1>
                 <form onSubmit={handleSubmit} className="contactForm">

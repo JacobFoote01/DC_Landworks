@@ -7,10 +7,12 @@ const About = () => {
             <div className="About">
                 <h1 className="aboutTitle">About Page</h1>
                 <div className="aboutContent">
-                    Welcome to our Page! We are a Landscape and Tree service contractor serving Utah County and select portions of Salt Lake County Utah. With 10+ years of experience and a strong education in the most up-to-date horticultural practices, we can help you create a space full of life and beauty!
-                </div>
-                <div className="aboutContent">
-                    Transform your outdoor space with our expert landscaping services. We specialize in creating beautiful, functional landscapes tailored to your needs, from garden design and planting to hardscaping, and irrigation. Whether you're looking to refresh your backyard, design a welcoming front yard, or enhance your commercial property, our team brings creativity and professionalism to every project. Let us help you bring your vision to life!
+                    <div>
+                        Welcome to our page! We are a trusted landscaping and tree service contractor proudly serving Utah County and select areas of Salt Lake County, Utah. With over a decade of experience and a solid foundation in the latest horticultural practices, we’re here to help you create an outdoor space that’s vibrant, functional, and truly stunning.
+                    </div>
+                    <div>
+                        Transform your property with our expert landscaping solutions! From custom garden designs and lush planting to hardscaping and efficient irrigation systems, we specialize in crafting outdoor spaces that match your vision. Whether you’re refreshing your backyard, designing an inviting front yard, or elevating your commercial property, our team combines creativity, expertise, and professionalism in every project. Let us help you turn your dreams into reality!
+                    </div>
                 </div>
             </div>
         </div>

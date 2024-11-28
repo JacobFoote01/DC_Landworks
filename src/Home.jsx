@@ -1,14 +1,14 @@
 import React from "react";
-import "./Pages.css";
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div className="Home">
-            <h1>Home Page</h1>
-            <div>
-                This is the home page
+        <div className="homeContainer">
+            <div className="Home">
+                <div className="homeContent">
+                    Welcome to our page! We are a trusted landscaping and tree service contractor proudly serving Utah County and select areas of Salt Lake County, Utah. With over a decade of experience and a solid foundation in the latest horticultural practices, we’re here to help you create an outdoor space that’s vibrant, functional, and truly stunning.
+                </div>
             </div>
-
         </div>
     )
 }

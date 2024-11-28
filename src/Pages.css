@@ -1,18 +1,7 @@
-.Home {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    height: fit-content;
-    border-radius: 5px;
-}
-
 .aboutContainer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-height: 100vh;
-    width: 75%;
+    width: 80%;
     padding: 20px;
     margin: auto;
 }
@@ -20,7 +9,7 @@
 .About {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -36,14 +25,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.servicesPageTitle {
-    display: flex;
-    justify-content: center;
-}
-
 .services-container {
-    display: flex;
-    justify-content: center;
+    margin: 40px;
     padding: 20px;
     text-align: center;
     background-color: #ebebeb;
@@ -51,7 +34,7 @@
 }
 
 .services-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 35px;
     padding: 20px;
@@ -93,15 +76,14 @@
 .contactContainer {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    padding: 20px;
+    align-items: center;
+    width: 100vw;
+    padding: 40px;
 }
 
 .Contact {
     background-color: #ffffff;
-    width: 100vw;
-    max-width: 900px;
+    width: 100%;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 5px;
