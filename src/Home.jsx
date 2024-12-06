@@ -1,7 +1,15 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
+    const handleButton = () => {
+        navigate('/Contact');
+    };
+
     return (
         <main className="homeContainer">
             <section className="Home">
@@ -13,6 +21,8 @@ const Home = () => {
                         outdoor space that’s vibrant, functional, and truly stunning.
                     </p>
                 </div>
+            </section>
+            <section className="midSection">
                 <div className="jobProcess">
                     <h2>Our Process</h2>
                     <div className="cardContainer">
@@ -32,6 +42,7 @@ const Home = () => {
                             <p>We ensure your satisfaction by conducting a follow-up to address any questions and provide maintenance tips.</p>
                         </div>
                     </div>
+                    <button className="homeQuote" onClick={handleButton}>Get a Quote</button>
                 </div>
             </section>
         </main>

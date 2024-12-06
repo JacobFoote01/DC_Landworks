@@ -1,5 +1,6 @@
 .homeContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px 0;
@@ -14,6 +15,7 @@
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
+    margin-bottom: 50px;
 }
 
 .homeContent {
@@ -22,8 +24,15 @@
     color: #333;
 }
 
+.midSection {
+    width: 90%;
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-top: 2px solid #ddd;
+}
+
 .jobProcess {
-    margin-top: 40px;
+    margin: 40px 0;
     text-align: center;
 }
 
@@ -31,11 +40,13 @@
     font-size: 28px;
     margin-bottom: 20px;
     color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .cardContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -44,7 +55,7 @@
 .card {
     flex: 1;
     min-width: 280px;
-    max-width: 300px;
+    max-width: 450px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -52,6 +63,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .cardImage {
@@ -63,16 +80,21 @@
 
 .card h3 {
     font-size: 22px;
-    color: #555;
+    color: #444;
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
     line-height: 1.5;
-    color: #666;
+    color: #555;
 }
 
+.homeQuote {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
 
 @media (max-width: 768px) {
     .Home {
@@ -91,5 +113,10 @@
 
     .card {
         max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card:last-child {
+        margin-bottom: 0;
     }
 }
