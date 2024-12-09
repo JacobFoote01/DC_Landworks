@@ -94,6 +94,11 @@
     padding: 10px 20px;
     margin-top: 20px;
     font-size: 18px;
+    color: #ffffff;
+}
+
+.homeQuote:hover {
+    background-color: #155d0c;
 }
 
 @media (max-width: 768px) {

@@ -6,22 +6,29 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-image: url("/background%20photo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #1b2727;
+  color: #000000d8;
   overflow-y: auto;
   overflow-x: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.288);
 }
 
 .main-content {
   padding-top: 120px;
-  /* padding-bottom: 100px; */
+  padding-bottom: 100px;
   overflow-y: auto;
   width: 100%;
   flex: 1;
@@ -37,19 +44,23 @@ h1 {
   display: flex;
   position: fixed;
   bottom: 0;
-  width: 100%;
-  height: 50px;
+  left: 0;
+  width: 100vw;
+  height: 60px;
   border-top: 5px solid #6b8e4e;
+  padding: 0 15px;
+  z-index: 1000;
 }
 
 .facebook_logo {
-  color: #000;
+  color: #6b8e4e;
   font-size: 50px;
   padding-left: 25px;
 }
 
 .facebook_logo:hover {
-  color: #1f7713;
+  color: #155d0c;
+  transform: scale(1.1);
 }
 
 button {
@@ -57,7 +68,19 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  color: #1b2727;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #155d0c;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid #1f7713;
 }
 
 @media (prefers-color-scheme: light) {
@@ -68,5 +91,12 @@ button {
 
   a:hover {
     color: #6b8e4e;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
   }
 }

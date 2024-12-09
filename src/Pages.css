@@ -4,11 +4,27 @@
     padding: 0;
 }
 
-.aboutContainer {
+.aboutContainer,
+.services-container {
     display: flex;
     justify-content: center;
-    width: 80%;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
     padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px 20px;
     margin: auto;
 }
 
@@ -40,7 +56,7 @@
 }
 
 .services-grid {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 35px;
     padding: 20px;
@@ -51,11 +67,12 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-image {
@@ -91,7 +108,8 @@
 .Contact {
     background-color: #ffffff;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -103,21 +121,26 @@
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    line-height: 1.2;
 }
 
 .contactForm input,
 .contactForm textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: auto;
 }
 
 .contactForm textarea {
     resize: vertical;
-    min-height: 80px;
+    min-height: 120px;
+    padding: 10px;
 }
 
 .contactForm {
@@ -127,6 +150,7 @@
 
 .contactForm div {
     margin: 15px;
+    margin-bottom: 20px;
 }
 
 textarea {
@@ -138,6 +162,7 @@ textarea {
     color: #555;
     text-align: center;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .contactInfo div {
@@ -149,16 +174,28 @@ textarea {
     padding: 10px 20px;
     border: none;
     background-color: #6b8e4e;
-    color: #000000;
+    color: #ffffff;
     border-radius: 4px;
     cursor: pointer;
     align-items: center;
     width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 #submitButton:hover {
-    background-color: #1f7713;
+    background-color: #155d0c;
     transition: background-color 0.3s ease, color 0.3s ease;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+#submitButton:focus,
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: 2px solid #6b8e4e;
+    outline-offset: 2px;
+    border: 1px solid #6b8e4e;
 }
 
 @media (max-width: 768px) {

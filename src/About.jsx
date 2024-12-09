@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="aboutContainer">
             <div className="About">
-                <h1 className="aboutTitle">About Page</h1>
+                <h1 className="aboutTitle">About DC Landworks</h1>
                 <div className="aboutContent">
                     <div>
                         Welcome to our page! We are a trusted landscaping and tree service contractor proudly serving Utah County and select areas of Salt Lake County, Utah. With over a decade of experience and a solid foundation in the latest horticultural practices, we’re here to help you create an outdoor space that’s vibrant, functional, and truly stunning.
