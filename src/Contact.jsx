@@ -20,7 +20,19 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log('Form Data', formData)
+
+        if (!formData.name || !formData.email || !formData.city || !formData.description) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        if (!/\S+@\S+\.\S+/.test(formData.email)) {
+            alert("Please provide a valid email address.");
+            return;
+        }
+
+        console.log('Form Data', formData);
+        alert("Form submitted successfully!");
     }
 
     return (
