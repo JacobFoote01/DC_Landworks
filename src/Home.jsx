@@ -14,7 +14,7 @@ const Home = () => {
         <main className="homeContainer">
             <section className="Home">
                 <div className="homeContent">
-                    <h1>Welcome to our page!</h1>
+                    <h1>DC Landworks</h1>
                     <p>
                         We are a trusted landscaping and tree service contractor proudly serving Utah County and select areas of Salt Lake County, Utah.
                         With over a decade of experience and a solid foundation in the latest horticultural practices, we’re here to help you create an
